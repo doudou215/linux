@@ -13,7 +13,7 @@
 #include<netinet/in.h>
 using namespace std;
 
-
+/*创建一个客户端，该客户端每两秒向服务器发送 *str的内容，若无法发送则退出*/
 
 extern "C" void open_client(char *str){
     int clientSocket=socket(AF_INET,SOCK_STREAM,0);
